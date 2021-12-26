@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Font Awesome Image</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+  </head>
+  <body>
+    <main class="main">
+      <section class="font-awesome">
+        <div class="container">
+          <div class="font-awesome__wrap">
+            <h1>Lesson 8. Images. Font Awesome. Basic animation</h1>
+            <div class="transition">
+              <h2>Font Awesome + transition</h2>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+                <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+                <li><span class="fa-li"><i class="fas fa-spinner fa-spin"></i></span>replace bullets</li>
+                <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+              </ul>
+              <p>Наведись на синий блок и узри магию <strong>transition.</strong></p>
+            </div>
+            <div class="transform">
+              <h2>Transform</h2>
+              <div class="transfor__anim">
+                <div class="transform__child"></div>
+                <div class="transform__child"></div>
+                <div class="transform__child"></div>
+              </div>
+              <p><strong>Transform & keyframes</strong> в действии.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section classs="images">
+        <div class="container">
+          <div class="images__wrap">
+            <div class="background">
+              <h2>Css Background</h2>
+              <div class="background__box"></div>
+              <p>Выставляем картинку через <strong>CSS</strong>  свойство <strong>background</strong> .</p>
+            </div>
+            <div class="picture">
+              <h2>Images ( HTML Picture )</h2>
+              <div class="picture__img">
+                <picture>
+                  <source media="(min-width: 1330px)" srcset="./assets/images/marvel.jpg" type="image/jpeg">
+                  <source media="(min-width: 992px)" srcset="./assets/images/dc.jpg" type="image/jpeg">
+                  <source media="(max-width: 992px)" srcset="./assets/images/starwars.jpg" type="image/jpeg">
+                  <img src="./assets/images/marvel.jpg" alt="image">
+                </picture>
+              </div>
+              <p>Использование тега <strong>picture</strong> для отображения нужной картинки на нужном разрешении.</p>
+              <p>Открой эту страницу <strong>на разных девайсах</strong> и посмотри на результат.</p>
+            </div>
+            <div class="object-fit">
+              <h2>Universes (HTML object-fit )</h2>
+              <div class="list-img">
+
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/images/starwars.jpg" alt="">
+                    <p>Здесь кроется картинка с разрешением 300*181</p>
+                  </div>
+                </div>
+
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/images/dc.jpg" alt="">
+                    <p>Здесь кроется картинка с разрешением 700*350</p>
+                  </div>
+                </div>
+
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/images/marvel.jpg" alt="">
+                    <p>Здесь кроется картинка с разрешением 1920*1035</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
